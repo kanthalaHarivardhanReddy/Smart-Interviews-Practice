@@ -35,7 +35,10 @@ public class Solution {
             int arr[] = new int[n];
             
             for(int i = 0;i < n; i++) arr[i] = sc.nextInt();
-            
+            root = new TreeNode(arr[0]);
+            for(int i = 1; i < n; i++) {
+                insertInBST(root, arr[i]);
+            }
         }
         System.out.print(sb.toString());
     }
